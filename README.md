@@ -38,14 +38,32 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ## PROGRAM:
 
 ```
-home.html
+views.py
+from django.shortcuts import render,HttpResponse
+from.models import student,zomato
+
+def about(request):
+    return render(request,'fwad.html',{"name":"hello"})
+def home(request):
+    return HttpResponse("<h1>Hello all<h2>")
+# Create your views here.
+
+urls.py
+from django.contrib import admin
+from django.urls import path
+from app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('new/',views.home),
+    path('',views.home),
+]
 
 
 ```
 
 
 ## OUTPUT:
-![alt text](apple.jpg)
-
+![alt text](<Screenshot 2026-11-18 211640.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
