@@ -65,5 +65,7 @@ urlpatterns = [
 
 ## OUTPUT:
 ![alt text](<Screenshot 2026-11-18 211640.png>)
+
+![alt text](<Screenshot 2026-11-19 083219.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
